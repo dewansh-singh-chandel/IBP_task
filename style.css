@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('coding_img.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
+}
+.container{
+    display: flex;
+    
+}
+.sidebar{
+
+    background-color: rgb(201, 197, 197);
+
+    position: absolute;
+    width: 200px;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+    z-index: 10;
+
+}
+
+.sidebar-go{
+    
+    transform: translate(-443px,0);
+
+    position: absolute;
+    z-index: 10;
+    
+}
+
+.sidebar nav{
+
+    padding: 47px;
+    
+}
+
+.sidebar nav li{
+    list-style: none;
+    font-size: 15px;
+
+    padding: 33px 0px;
+}
+
+.sidebar nav li a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    /* background-color: yellow; */
+    width: 90vw;
+    font-family: "Ubuntu", sans-serif;
+    font-style: normal;
+    /* width: calc(100vw - 200px); */
+    /* z-index: 9; */
+}
+
+
+
+.info{
+
+    /* background-color: pink; */
+
+    height: 58vh;
+    width: 80vw;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.devinfo{
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    flex-direction: column;
+    font-family: "Source Code Pro", monospace;
+}
+
+.devpic img{
+    height: 58vh;
+    
+}
+
+.hello{
+
+    font-size: 3em;
+}
+.name{
+    font-size: 4em;
+    font-weight: bold;
+}
+.about{
+    font-size: 2.5em;
+}
+.moreabout{
+    font-size: 2.2em;
+}
+.buttons{
+    margin-top: 34px;
+    font-size: 16px;
+}
+.btn{
+    padding: 11px;
+    border-radius: 25px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 2px 3px ;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding: 9px;
+    border-radius: 25px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 4px 0 ;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+.btn-sm:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+
+
+.contactform{
+    font-family: "Source Code Pro", monospace;
+    /* margin: 40px; */
+    padding: 34px;
+    padding-top: 144px;
+    margin-left: 84px;
+    font-size: 30px;
+    
+}
+
+.contactform h1{
+    font-family: "Source Code Pro", monospace;
+    text-align: center;
+}
+
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contactform form div input{
+    width: 20vw;
+    border-radius: 10px;
+    margin: 7px 0;
+}
+
+.form-text{
+    color: black;
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+#form-check{
+    flex-direction: row;
+    
+}
+#isclient{
+    width: 17px;
+    margin: 5px 0;
+    
+}
+
+.aboutinfo{
+    margin-top: 20px;
+    margin-left: 84px;
+}
+.blogcontainer{
+    margin: 22px;
+    margin-left: 84px;
+}
+.blogcontainer h1{
+    padding-bottom: 10px;
+}
+
+.blogitem{
+
+    padding: 10px 0;
+}
+
+.blogitem p{
+    padding: 10px 0;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+}
+.ham{
+    margin-top: 7px;
+    /* z-index: 20; */
+}
+.cross{
+    margin-top: 7px;
+    margin-left: 148px;
+    /* z-index: 20; */
+}
+
+
+.code-block-container {
+    position: relative;
+    margin: 20px 0;
+    width: 40em;
+}
+
+.code-label {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background-color: #fff; /* Background of label */
+    color: #555; /* Text color */
+    font-weight: bold;
+    padding: 0 10px;
+    font-family: Arial, sans-serif;
+}
+
+.code-block {
+    background-color: #f4f4f4; /* Light background */
+    border: 1px solid #ddd;
+    border-top: none; /* Remove top border */
+    border-radius: 0 0 5px 5px; /* Only round bottom corners */
+    padding: 15px 0;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    color: #0d0d0d; /* Dark text */
+    overflow-x: auto; /* Horizontal scroll for long code */
+    text-align: left; 
+    
+}
+
+.code-border {
+    border-top: 2px solid #555; /* Horizontal line above */
+    margin-bottom: 5px; /* Margin below the line */
+}
+.aboutinfo{
+
+    font-size: 20px;
+}
+.aboutinfo p,h2{
+    padding: 10px 0;
+}
+.skills{
+    font-size: 1em;
+}
+.projects{
+    font-size: 1em;
+}
+.interests{
+    font-size: 1em;
+}
+@media (max-width: 1200px) {
+    
+
+    /* .sidebar{
+        transform: translate(-443px,0);
+
+        position: absolute;
+    } */
+    .devinfo{
+        font-size: 10px;
+    }
+    .buttons{
+        font-size: 7px;
+    }
+    .devpic{
+        display: none;
+
+    }
+    .aboutinfo, .blogcontainer, .contactform{
+        margin:8px;
+        margin: 50px 8px;
+
+    }
+    .contactform{
+        padding-top: 0px;
+        font-size: 20px;
+    }
+    .aboutinfo{
+        font-size: 15px;
+    }
+    .code-block-container {
+        position: relative;
+        margin: 20px 0;
+        width: 20em;
+    }
+
+}
